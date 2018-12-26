@@ -1,0 +1,118 @@
+body {
+		height: 100%;
+		font-family: Arial, Helvetica, sans-serif;
+		margin:0px;
+}
+header .logo { 
+		z-index:2;
+		width:100px;
+		height:58px;
+		position:fixed;
+		top:0px;
+		right:0px;
+		margin:0px;
+}
+
+#menu{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+		background-color: #333;
+		top: 0px;
+		width: 100%;
+		position:fixed;
+}
+
+#menu li {
+		float: left;
+}
+
+li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 20px 21px;
+		text-decoration: none;
+		font-weight:bold;
+}
+
+li a:hover:not(.nowhere) {
+		background-color: red;
+		transition: 0.4s;
+}
+.nowhere {
+		background-color: orange;
+}
+
+/* Sytles of Content  */
+
+.launches{
+		width:900px;
+		float:right;
+		font-weight: bold;
+		font-size:30px;
+}
+
+.launches ol  li {
+		margin:20px;
+}
+
+.drawing{
+		float:left;
+		width:800px;
+		height:1200px;
+		border:solid;
+		margin-left:10px;
+		margin-top:50px;		
+}
+
+.editted1{
+		position:absolute;
+		top:1500px;
+		left:10px;
+		float:left;
+		width:800px;
+		height:1000px;
+		z-index:-1;
+		border:solid;	
+}	
+
+.editted2{
+		position:absolute;
+		top:2600px;
+		left:10px;
+		float:left;
+		width:800px;
+		height:1100px;
+		z-index:-1;
+		border:solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

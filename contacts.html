@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Başar Demir">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacs</title>
+	<link rel="stylesheet" type="text/css" href="static/css/contacts.css" />
+	<link rel="shortcut icon" href="static/photos/icon.ico">	
+</head>
+
+<body>
+	
+	<header>
+		<img class="logo" src="static/photos/logo.png" alt="logo"/>
+	<nav>
+			<ul id="menu">		
+				<li><a href="index.html">Home Page</a></li>
+				<li><a href="about.html">Founding Of SpaceX</a></li>
+				<li><a href="elonmusk.html">Who is Elon Musk?</a></li>
+				<li><a href="failures.html">Fail History</a></li>
+				<li><a href="launches.html">Launches</a></li>
+				<li><a class="nowhere" href="contacts.html">Contacs</a></li>
+			</ul>	
+	</nav>
+	</header>
+	 
+<h2>Başar Demir</h2>
+
+	<ul class="me">
+		<li>Istanbul Technical University</li>
+		<li style="list-style-type:none;">
+			<ul>
+				<li>Computer Engineering</li>
+			</ul>
+		</li>	
+		<li>Student ID: 150180080</li>
+		<li>Mail Address: demirba18@itu.edu.tr</li>
+	</ul>
+
+	<a href="mailto:demirba18@itu.edu.tr" class="mailbox">
+	<img src="static/photos/mail.png"  alt="mail" title="Send Me an E-mail!" />
+	</a>
+	
+	<iframe class="map" width="450" height="350" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJOaEdU-i1yhQRCTRIuDuS7Lc&key=AIzaSyDfHj8xuubnwDq55X3RxCu166HoqA847uQ" allowfullscreen></iframe>
+	
+	<br><h1>References</h1>
+	
+	<div class="ref">
+	<p>When I was making this website, I read and used this sources:</p>
+	
+	<img class="photo" src="static/photos/cdn.jpg" alt="Rocket Landing"/>
+	
+	<ul>
+		<li>https://medium.com/swlh/how-the-socratic-method-helped-elon-musk-start-spacex-a2fddcacb92d</li>
+		<li>https://www.quora.com/How-exactly-did-SpaceX-start-How-did-Elon-build-it-and-figure-out-where-to-start</li>
+		<li>https://dictionary.cambridge.org</li>
+		<li>https://ecorner.stanford.edu/video/opportunities-in-space-mars-oasis/</li>
+		<li>https://en.wikipedia.org/wiki/List_of_Falcon_9_and_Falcon_Heavy_launches</li>
+		<li>https://www.spacex.com/</li>
+		<li>https://en.wikipedia.org/wiki/SpaceX</li>
+		<li>https://www.youtube.com</li>
+		<li>https://developers.google.com/</li>
+		<li>https://www.w3schools.com/</li>
+	</ul>
+	
+	</div>
+	
+	<h2>Send Comments!!!!</h2>
+	
+	<form action="/contacts.html" method="POST" accept-charset="utf-8">
+
+			Your Password: <input type="password" name="password"placeholder="your password"/><br>
+			
+			Write Your Comment: <input type="text" name="comment"placeholder="your comment"/><br>
+			
+			<div id="radio">
+			<input type="radio" name="point" value="1" />★<br>
+			
+			<input type="radio" name="point" value="2" />★★<br>
+			
+			<input type="radio" name="point" value="3"  />★★★<br>
+			
+			<input type="radio" name="point" value="4" />★★★★<br>
+			
+			<input type="radio" name="point" value="5" checked="checked" />★★★★★<br>
+			</div>
+			
+			<input type="submit" value="Send!"/>
+	</form>
+	
+	<div id="comment">
+	<h3>Previous Comments</h3>
+	<ol>
+    % comments = open("comment.txt", "r+", encoding='utf-8')
+	%for comment in comments:
+	<li style="color:white; font-size:30px;">{{comment}}</li>
+	%end
+	</ol>
+	</div>
+	
+	
+</body>
+
+</html>

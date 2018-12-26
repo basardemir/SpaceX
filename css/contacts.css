@@ -1,0 +1,178 @@
+body, html {
+		height: 100%;
+		margin: 0;
+		font-family: Arial, Helvetica, sans-serif; 
+}
+
+body {		
+		
+		background-repeat: no-repeat;
+	    background-size: cover;	     		
+		background-color: #333;
+		height: 100%;
+}
+
+header .logo { 
+		z-index:2;
+		width:100px;
+		height:58px;
+		position:fixed;
+		top:0px;
+		right:0px;
+		margin:0px;
+}
+
+#menu{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+		top: 0;
+		width: 100%;
+		position: fixed;
+		z-index:1;
+}
+
+#menu li {
+		float: left;
+}
+
+#menu li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 20px 21px;
+		text-decoration: none;
+		font-weight:bold;
+}
+
+#menu li a:hover:not(.nowhere) {
+		background-color: red;
+		transition: 0.4s;
+}
+
+.nowhere {
+		background-color: orange;
+}
+
+/* Sytles of Content  */
+
+h2{
+		margin-top:70px;
+		margin-left:10px;
+		font-size:32px;
+		color:#9b2c1b;
+}
+
+.me {
+		font-size:30px;
+		margin:10px;
+		color:white;
+		background-color:rgba(0, 0, 0, 0.2);
+		width:800px;
+		border:solid;
+		border-color:black;
+		padding-left:35px;
+		padding-top:10px;
+		padding-bottom:10px;
+}
+	
+a .mailbox img {
+		z-index:-1;
+}
+
+.mailbox img{
+		width:300px;
+		height:300px;
+		position:absolute;
+		right:600px;
+		top:80px;
+}
+
+.map{
+		position:absolute;
+		right:5%;
+		top:80px;
+}	
+
+h1{
+		font-size:35px;
+		color:#9b2c1b;
+		margin-left:10px;
+}
+
+ul, p{
+		color:white;
+
+}
+.photo{
+		position:absolute;
+		top:600px;
+		right:100px;
+		height:400px;
+		width:600px;
+		border:dotted;
+		border-color:black;
+}
+
+.ref{
+		font-size:30px;
+		margin:10px;
+		color:white;
+		background-color:rgba(0, 0, 0, 0.2);
+		width:1100px;
+		border:solid;
+		border-color:black;
+		padding:20px;
+		padding-top:10px;
+}
+
+#comment{
+		width:1850px;
+		border:solid;
+		margin:10px;
+		padding: 10px;
+		padding-left: 20px;
+		background-color:rgba(0, 0, 0, 0.2);
+		position: absolute;
+		
+}
+
+#radio{
+		font-size: 20px;
+		color:yellow;
+
+}
+
+h3{
+		font-size:40px;
+		color:red;
+
+}
+
+#comment.li{
+		border:solid;
+		
+}
+
+input{
+	margin:10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

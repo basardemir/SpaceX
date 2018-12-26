@@ -1,0 +1,134 @@
+body, html {
+		height: 100%;
+		margin: 0;
+		font-family: Arial, Helvetica, sans-serif;
+  
+}
+header .logo { 
+		z-index:2;
+		width:100px;
+		height:58px;
+		position:fixed;
+		top:0px;
+		right:0px;
+		margin:0px;
+}
+
+#menu{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		background-color: #333;
+		top: 0;
+		width: 100%;
+		position: fixed;
+}
+
+li {
+		float: left;
+}
+
+li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 20px 21px;
+		text-decoration: none;
+		font-weight:bold;
+}
+
+li a:hover:not(.nowhere) {
+		background-color: red;
+		transition: 0.4s;
+}
+
+.nowhere {
+		background-color: orange;
+}
+
+/* Sytles of Content  */
+
+p, h1, h2, h3, h4 {
+		margin:15px;
+
+}
+h1{
+		margin-top:60px;
+		margin-left:10px;
+		text-align:left;
+		color:#9b2c1b;
+		font-size:40px;
+}
+
+h3{
+		font-size:25px;
+		text-decoration:underline;
+}
+h4{
+		font-size:20px;
+		text-decoration:underline;
+}
+	
+blockquote{ 
+		margin-left:2px;
+}
+
+p { 
+		font-size: 20px;
+		text-indent:25px;
+}
+
+#pay{
+		float:right;
+		height:200px;
+		width:350px;
+		margin:10px;
+}
+
+#uni {
+		float:left;
+		height:200px;
+		width:150px;
+		margin:10px;
+}
+
+#prsnt {
+		float:left;
+		height:200px;
+		width:400px;
+		margin:10px;
+}
+
+#auto {
+		float:left;
+		height:250px;
+		width:400px;
+		margin:10px;
+	
+}
+
+.video {
+		float:right;
+		margin:5px;
+}
+
+#boring {
+		float:right;
+		height:250px;
+		width:400px;
+		margin:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

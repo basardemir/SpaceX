@@ -1,0 +1,139 @@
+body, html {
+		  height: 100%;
+		  margin: 0;
+		  font-family: Arial, Helvetica, sans-serif;	 
+}
+
+header .logo { 
+		z-index:2;
+		width:100px;
+		height:58px;
+		position:fixed;
+		top:0px;
+		right:0px;
+		margin:0px;
+}
+
+body {		
+		background-image: url(http://girisimturkiye.com/wp-content/uploads/2018/01/spacex-falcon-heavy-elon-musk-china-europe-esa-nasa-mars-sls-boeing.jpg);
+		background-repeat: no-repeat;
+	    background-size: cover;	     		
+		background-color: #333;
+		height: 100%;
+}
+
+#menu{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		background-color: #333;
+		top: 0;
+		width: 100%;
+		position: fixed;
+}
+
+#menu li {
+		float: left;
+}
+
+li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 20px 21px;
+		text-decoration: none;
+		font-weight:bold;
+}
+
+li a:hover:not(.nowhere) {
+		background-color: red;
+		transition: 0.4s;
+}
+
+.nowhere {
+		background-color: orange;
+}
+
+/* Sytles of Content  */
+
+#firsts {
+		color: white;
+	
+}
+
+h1 { 
+		font-size: 80px;
+		color:orange;	
+		text-align:center; 
+		margin-top:70px;
+}		
+
+.right {	
+		position:absolute;
+		right:5%;
+		top:20%;
+		float:right;
+		width: 900px; 
+		height:580px;
+		border:solid;
+		padding:25px;
+		background-color:rgba(0, 0, 0, 0.2);	
+}
+
+.right li {
+		color:white;
+		font-size:30px;
+		margin-bottom:4px;
+		margin-left:20px;
+	}
+
+#photoone {
+		height: 300px;
+		width: 500px;
+		position:absolute;
+		left:4%;
+		top:20%;
+		border:dotted;
+}
+
+#phototwo {
+		height: 300px;
+		width: 550px;
+		position:absolute;
+		top:60%;
+		left:9%;
+		border:dotted;
+		border-color:white;
+}
+
+form {
+	position:absolute;
+	top:900px;
+	left:50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	       

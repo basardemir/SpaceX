@@ -1,0 +1,26 @@
+body, html {
+		height: 100%;
+		margin: 0;
+		font-family: Arial, Helvetica, sans-serif; 
+}
+
+body {		
+		background-image:url("http://assets.suredone.com/1895/media-photos/ts-bt01police-extra-long-official-1000-police-line-do-not-cross-crime-scene-yellow-tape-roll.jpg");
+		background-repeat: no-repeat;
+	    background-size: cover;	     		
+		background-color: #333;
+		height: 100%;
+}
+
+h1{
+	font-size:50px;
+	color:white;
+	margin-left:50px;
+}
+
+
+
+
+
+
+}
