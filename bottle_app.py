@@ -8,10 +8,8 @@
 from bottle import route, run, default_app, debug, static_file, template, Bottle, request, SimpleTemplate
 from hashlib import sha256
 
-
-
-def create_hash(password):
-    pw_bytestring = password.encode()
+def create_hash(password):               #this part is taken from
+    pw_bytestring = password.encode()    # https://bitbucket.org/damienjadeduff/hashing_example/raw/master/hash_password.py
     return sha256(pw_bytestring).hexdigest()
 
 def index():
@@ -52,26 +50,27 @@ route('/static/photos/<filename>', 'GET', photos)
 
 def css(filename):
 	return static_file(filename, root="./css")
-route('/static/css/<filename>', 'GET', css)	
+route('/static/css/<filename>', 'GET', css)
 
 def comment(filename):
     comments = request.forms.comment.strip()
     pswrd = request.forms.password
+    terms= request.forms.terms
     hsh1 = create_hash(pswrd)
     point= " ("  + " rate: " + request.forms.get("point") + " )" + "\n"
     while True:
-        if hsh1 == "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92":
+        if hsh1 == "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92" and terms == "accepted":
             comment = open("comment.txt", "a+", encoding='utf-8')
             comment.write(comments + point)
             comment.close()
             return template('./contacts.html')
+        elif terms != "accepted":
+            return template("./agreements.html")
         else:
             return template("./wrong.html")       
 route('/<filename>', 'POST', comment)
 
 
-
-	
 
 #####################################################################
 ### Don't alter the below code.

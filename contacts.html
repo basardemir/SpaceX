@@ -66,27 +66,34 @@
 	
 	</div>
 	
-	<h2>Send Comments!!!!</h2>
+	<div class="comments">
+	
+	<h2 class="cmnt">Send Comment!</h2>
 	
 	<form action="/contacts.html" method="POST" accept-charset="utf-8">
 
-			Your Password: <input type="password" name="password"placeholder="your password"/><br>
+			<p>Your Password: </p><input class="inp" name="password" type="password" placeholder="Please enter your password"/><br>
 			
-			Write Your Comment: <input type="text" name="comment"placeholder="your comment"/><br>
-			
+			<p>Write Your Comment:</p>
+			<textarea name = "comment" placeholder="You can write comments here" rows = "8" cols = "80"></textarea><br>
+        	
+        	<p>Rate My Website:</p>
 			<div id="radio">
 			<input type="radio" name="point" value="1" />★<br>
 			
 			<input type="radio" name="point" value="2" />★★<br>
 			
-			<input type="radio" name="point" value="3"  />★★★<br>
+			<input type="radio" name="point" value="3" checked="checked" />★★★<br>
 			
 			<input type="radio" name="point" value="4" />★★★★<br>
 			
-			<input type="radio" name="point" value="5" checked="checked" />★★★★★<br>
+			<input type="radio" name="point" value="5"/>★★★★★<br>
 			</div>
 			
-			<input type="submit" value="Send!"/>
+			<input type="checkbox" name="terms" value="accepted" checked="checked"/>I agree to the Terms of Use. <br>
+						
+			<input type="submit" name="send" value="Send!"/>
+			
 	</form>
 	
 	<div id="comment">
@@ -99,7 +106,26 @@
 	</ol>
 	</div>
 	
-	
+	</div>
+
 </body>
 
 </html>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
